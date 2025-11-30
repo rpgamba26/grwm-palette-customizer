@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, MapPin, Mail, Download, Check, X } from 'lucide-react';
-
+import './index.css';
 const PaletteCustomizer = () => {
   const [step, setStep] = useState('case-selection');
   const [selectedCase, setSelectedCase] = useState(null);
