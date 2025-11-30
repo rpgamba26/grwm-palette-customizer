@@ -1,10 +1,29 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'gold': '#FFD700',
+        'pink-case': '#FFB6C1',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-out',
+        'bounce-slow': 'bounce 1s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      boxShadow: {
+        'purple': '0 10px 25px rgba(168, 85, 247, 0.3)',
+      },
+    },
   },
   plugins: [],
-}   
+}

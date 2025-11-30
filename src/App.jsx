@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, MapPin, Mail, Download, Check, X } from 'lucide-react';
-import './index.css';
+
 const PaletteCustomizer = () => {
   const [step, setStep] = useState('case-selection');
   const [selectedCase, setSelectedCase] = useState(null);
@@ -662,15 +662,13 @@ const PaletteCustomizer = () => {
               setReferenceCode('');
             }}
             className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-lg transition-all"
-          >
-            Create Another Order
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  return null;
+>
+Create Another Order
+</button>
+</div>
+</div>
+);
+}
+return null;
 };
-
-export default PaletteCustomizer;
+export default PaletteCustomizer
